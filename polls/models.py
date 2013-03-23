@@ -66,6 +66,9 @@ class Quiz(models.Model):
     def __unicode__(self):
         return self.question
 
+    class Meta:
+        verbose_name_plural = 'Quizzes'
+
 class Response(models.Model):
     student = models.ForeignKey(Student)
     quiz = models.ForeignKey(Quiz)

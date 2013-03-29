@@ -1,4 +1,4 @@
 frizzle
 =======
 
-Ride on a river of lava...
+Seatbelts, everyone!

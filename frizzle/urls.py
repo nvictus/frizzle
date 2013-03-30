@@ -4,10 +4,14 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+import frizzle.views
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'frizzle.views.home', name='home'),
     # url(r'^frizzle/', include('frizzle.foo.urls')),
+
+    url(r'^$', frizzle.views.index, name='index'),
     url(r'^polls/', include('frizzle.polls.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

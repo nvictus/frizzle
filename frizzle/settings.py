@@ -1,7 +1,7 @@
 # Django settings for frizzle project.
 import os.path
 
-PROJECT_PATH = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME':  os.path.abspath(os.path.join(PROJECT_PATH, '..', 'frizzle-db.sqlite3')),  # Or path to database file if using sqlite3.
+        'NAME':  os.path.join(PROJECT_ROOT, 'frizzle-db.sqlite3'),  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -124,7 +124,7 @@ INSTALLED_APPS = (
     #'django.contrib.sites',
     #'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
+    'frizzle.polls',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

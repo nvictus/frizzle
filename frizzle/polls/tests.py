@@ -10,7 +10,7 @@ from django.test import TestCase
 
 from django.utils import timezone
 from datetime import timedelta
-from polls.models import *
+from frizzle.polls.models import *
 
 class TestDB(TestCase):
     def setUp(self):

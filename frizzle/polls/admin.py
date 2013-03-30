@@ -1,5 +1,5 @@
 from django.contrib import admin
-from polls.models import Instructor, Course, Session, Student, Quiz, Response
+from frizzle.polls.models import Instructor, Course, Session, Student, Quiz, Response
 
 admin.site.register(Instructor)
 admin.site.register(Course)

@@ -31,7 +31,7 @@ class Session(models.Model):
     date = models.DateTimeField('class date-time')
 
     def __unicode__(self):
-        return '%s: session %s' % (course.name, self.id)
+        return '%s: session %s' % (self.course, self.id)
 
 class Student(models.Model):
     LEVELS = (

@@ -67,7 +67,7 @@ class Quiz(models.Model):
         return self.question
 
     class Meta:
-        verbose_name_plural = 'Quizzes'
+        verbose_name_plural = 'quizzes'
 
 class Response(models.Model):
     student = models.ForeignKey(Student)

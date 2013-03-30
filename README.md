@@ -3,9 +3,15 @@ frizzle
 
 Seatbelts, everyone!
 
-#Simple test of polls app
-manage.py test polls
+### To start
+ ```python
+python manage.py syncdb
+python manage.py runserver
+ ```
 
-# To start
-manage.py syncdb
-manage.py runserver 8080
+### Run unit tests on polls app
+ ```python
+python manage.py test polls
+ ```
+ 
+
